@@ -1,0 +1,21 @@
+<h2>My Heroes</h2>
+
+<div>
+  <label for="new-user">User: </label>
+  <input id="new-user" #username />
+
+  <label for="new-user">email: </label>
+  <input id="new-user" #userEmail />
+
+  <label for="new-user">Genero: </label>
+  <input id="new-user" #userGenero />
+
+  <label for="new-user">Senha: </label>
+  <input id="new-user" #userSenha />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="add(username.value, userEmail.value, userGenero.value, userSenha.value);
+   ">
+    Add User
+  </button>
+</div>
